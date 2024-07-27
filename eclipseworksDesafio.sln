@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applicarion", "Applicarion", "{17243051-9890-4611-ABEE-26F85B37F4A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eclipseworksDesafio.Application", "eclipseworksDesafio.Application\eclipseworksDesafio.Application.csproj", "{997381EE-6828-4CAB-9CF1-BBD6600AA65E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{601EF072-35CA-46CC-A1F2-F3A67DC36192}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eclipseworksDesafio.Core", "eclipseworksDesafio.Core\eclipseworksDesafio.Core.csproj", "{A2F08033-7987-4C72-B30F-D3E662D9B23C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EF3E2A20-9B19-466F-8662-55997AA4B136}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{74E06DD8-2899-4016-8C53-9001A9480644}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eclipseworksDesafio.Infrastructure", "eclipseworksDesafio.Infrastructure\eclipseworksDesafio.Infrastructure.csproj", "{29F98CE6-D80B-4174-9F1B-09B5BB17B996}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eclipseworksDesafio.Api", "eclipseworksDesafio.Api\eclipseworksDesafio.Api.csproj", "{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{781731F3-7E09-49A1-8A33-E19CCA2533A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{997381EE-6828-4CAB-9CF1-BBD6600AA65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997381EE-6828-4CAB-9CF1-BBD6600AA65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997381EE-6828-4CAB-9CF1-BBD6600AA65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997381EE-6828-4CAB-9CF1-BBD6600AA65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F08033-7987-4C72-B30F-D3E662D9B23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F08033-7987-4C72-B30F-D3E662D9B23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F08033-7987-4C72-B30F-D3E662D9B23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F08033-7987-4C72-B30F-D3E662D9B23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F98CE6-D80B-4174-9F1B-09B5BB17B996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F98CE6-D80B-4174-9F1B-09B5BB17B996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F98CE6-D80B-4174-9F1B-09B5BB17B996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F98CE6-D80B-4174-9F1B-09B5BB17B996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{997381EE-6828-4CAB-9CF1-BBD6600AA65E} = {17243051-9890-4611-ABEE-26F85B37F4A4}
+		{A2F08033-7987-4C72-B30F-D3E662D9B23C} = {601EF072-35CA-46CC-A1F2-F3A67DC36192}
+		{29F98CE6-D80B-4174-9F1B-09B5BB17B996} = {EF3E2A20-9B19-466F-8662-55997AA4B136}
+		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0} = {74E06DD8-2899-4016-8C53-9001A9480644}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {042ADFBF-54BC-487C-A419-46285885F60C}
+	EndGlobalSection
+EndGlobal

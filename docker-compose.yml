@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  web:
+    build:
+      context: ./eclipseworksDesafio.Api
+      dockerfile: Dockerfile
+    container_name: desafio
+    ports:
+      - "80:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=db;Database=desafio;User=root;Password=root;
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: desafio
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
