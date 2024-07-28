@@ -4,7 +4,9 @@ using eclipseworksDesafio.Core.Interfaces;
 using eclipseworksDesafio.Infrastructure.Data.Context;
 using eclipseworksDesafio.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,8 +18,16 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 //builder.Services.AddDbContext<AppDbContext>(options =>
 //    options.UseSqlServer(connectionString));
 // Configurar o contexto do banco de dados
+
+
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+{
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString),
+        mySqlOptions => mySqlOptions.SchemaBehavior(MySqlSchemaBehavior.Ignore));
+
+});
 builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen(c =>
@@ -35,12 +45,9 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 
-    // Inclui os comentários XML para a documentação do Swagger (opcional)
-    //string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    //string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    //c.IncludeXmlComments(xmlPath);
+
 });
-// Adicionar serviços da camada Application
+
 
 builder.Services.AddScoped<IProjetoService, ProjetoService>();
 builder.Services.AddScoped<ITarefaService, TarefaService>();
@@ -60,6 +67,12 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
 //SWAGEGR
 app.UseSwagger();
 app.UseSwaggerUI(c =>

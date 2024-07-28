@@ -21,6 +21,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eclipseworksDesafio.Api", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{781731F3-7E09-49A1-8A33-E19CCA2533A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestUnitario", "TestUnitario", "{A8050383-1567-4A06-B7F2-78F08C657FCC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestesUnitario", "TestesUnitario\TestesUnitario.csproj", "{388AAB7F-A704-42B7-B9FC-0FAC454DF8A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{5D2B5FF5-8AF0-4787-873D-1236FE2BDBD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +49,10 @@ Global
 		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388AAB7F-A704-42B7-B9FC-0FAC454DF8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388AAB7F-A704-42B7-B9FC-0FAC454DF8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388AAB7F-A704-42B7-B9FC-0FAC454DF8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388AAB7F-A704-42B7-B9FC-0FAC454DF8A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +62,7 @@ Global
 		{A2F08033-7987-4C72-B30F-D3E662D9B23C} = {601EF072-35CA-46CC-A1F2-F3A67DC36192}
 		{29F98CE6-D80B-4174-9F1B-09B5BB17B996} = {EF3E2A20-9B19-466F-8662-55997AA4B136}
 		{D3C66887-4D7A-42B1-A7D7-0B6D75656FF0} = {74E06DD8-2899-4016-8C53-9001A9480644}
+		{388AAB7F-A704-42B7-B9FC-0FAC454DF8A0} = {A8050383-1567-4A06-B7F2-78F08C657FCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {042ADFBF-54BC-487C-A419-46285885F60C}
